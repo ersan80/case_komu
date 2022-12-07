@@ -1,0 +1,52 @@
+@import "./variables";
+.main {
+  margin: 2rem auto;
+  padding: 0;
+  border: 4px solid black;
+  width: 50rem;
+  height: fit-content;
+  .containerSearch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    .addCargoButton {
+      width: 100%;
+      font-size: 1rem;
+      color: $white;
+      background-color: $blueGray;
+      border: none;
+
+      &:hover {
+        transform: scale(1.1);
+        color: white;
+      }
+    }
+
+    .searchBox {
+      display: flex;
+      align-items: flex-end;
+      background-color: $blueGray;
+      margin: 0;
+      padding: 0.5rem 1rem 1rem 1rem;
+
+      .searchIcon {
+        margin-right: 0.5rem;
+        color: $white;
+      }
+
+      .searchInput {
+        width: 70%;
+
+        label {
+          color: $white;
+        }
+        input {
+          color: $white;
+        }
+      }
+    }
+  }
+}

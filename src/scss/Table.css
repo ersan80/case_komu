@@ -1,0 +1,17 @@
+.tableContainer {
+  margin: auto;
+}
+
+.tableContainer .table {
+  margin: 0;
+}
+
+.tableContainer .table .nameCell {
+  border-bottom: none;
+  font-size: 1.6rem;
+}
+
+.tableContainer .table .deleteCell {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Table.css.map */

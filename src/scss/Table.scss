@@ -1,0 +1,28 @@
+.tableContainer {
+  margin: auto;
+  padding: 1rem;
+
+  .nameDiv {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    p {
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 1.3rem;
+      margin: 0.5rem 1rem;
+
+      .deleteIcon {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/* Color Theme Swatches in Hex */
+.main {
+  margin: 2rem auto;
+  padding: 0;
+  border: 4px solid black;
+  width: 50rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.main .containerSearch {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.main .containerSearch .addCargoButton {
+  width: 100%;
+  font-size: 1rem;
+  color: #cecccc;
+  background-color: #3d5a73;
+  border: none;
+}
+
+.main .containerSearch .addCargoButton:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: white;
+}
+
+.main .containerSearch .searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #3d5a73;
+  margin: 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.main .containerSearch .searchBox .searchIcon {
+  margin-right: 0.5rem;
+  color: #cecccc;
+}
+
+.main .containerSearch .searchBox .searchInput {
+  width: 70%;
+}
+
+.main .containerSearch .searchBox .searchInput label {
+  color: #cecccc;
+}
+
+.main .containerSearch .searchBox .searchInput input {
+  color: #cecccc;
+}
+/*# sourceMappingURL=Home.css.map */
