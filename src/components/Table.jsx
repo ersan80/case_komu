@@ -5,7 +5,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import "../scss/Table.scss";
 
-const Table = ({ task, search, deleteData }) => {
+const Table = ({ task, search, deleteData,getData }) => {
   const charCode = search.charCodeAt(0);
   console.log(charCode)
   const [notFound, setNotFound] = useState(

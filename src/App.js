@@ -9,7 +9,8 @@ function App() {
   const { v4: uuidv4 } = require("uuid");
   console.log(uuidv4());
   const [task, setTask] = useState([]);
-  const url = " http://localhost:3002/task";
+  //const url = " http://localhost:3002/task";
+  const url = " https://63927eabac688bbe4c64aa3c.mockapi.io/users/";
 
   const getData = async () => {
     try {

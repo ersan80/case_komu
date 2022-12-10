@@ -6,7 +6,7 @@ import Table from "../components/Table";
 import Modal from "../components/Modal";
 import { ToastContainer } from "react-toastify";
 
-const Home = ({ task, postData, deleteData }) => {
+const Home = ({ task, postData, deleteData ,getData}) => {
   const data = {
     id: 6,
     name: "Ann Liebmann",
@@ -40,7 +40,7 @@ const Home = ({ task, postData, deleteData }) => {
           </button>
         </div>
       </div>
-      <Table task={task} search={search} deleteData={deleteData} />
+      <Table task={task} search={search} deleteData={deleteData} getData={ getData} />
       <Modal postData={postData} />
       <ToastContainer />
     </div>
