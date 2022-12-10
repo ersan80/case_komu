@@ -10,7 +10,7 @@ function App() {
   console.log(uuidv4());
   const [task, setTask] = useState([]);
   //const url = " http://localhost:3002/task";
-  const url = " https://63927eabac688bbe4c64aa3c.mockapi.io/users/";
+  const url = "https://63927eabac688bbe4c64aa3c.mockapi.io/users/";
 
   const getData = async () => {
     try {
@@ -35,9 +35,9 @@ function App() {
   };
   const deleteData = async (id) => {
     try {
-      await axios.delete(url+`/${id}`);
+      await axios.delete(url+`${id}`);
       getData();
-      toastwarn("Cargo information deleted successfuly");
+      toastsuccess("Cargo information deleted successfuly");
     } catch (error) {
       console.log(error);
       toastwarn(error.message);
