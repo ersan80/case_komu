@@ -1,36 +1,54 @@
+@import "../scss/variables";
 
-.container:nth-child(2){
-  background-color: red;
-
-}
-
+//! Table section ////
 
 .tableContainer {
   margin: auto;
-  padding: 1rem;
-  
+  padding: 0rem;
 
-  .nameDiv {
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-top: 1rem;
+  .MainChild:nth-child(odd) {
+    background-color: $lightGray;
   }
 
-  .infoBox:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+  .MainChild:hover {
+    background-color: $darkGray;
+  }
 
-    p {
-      display: flex;
-      flex-wrap: nowrap;
-      font-size: 1.3rem;
-      margin: 0.5rem 1rem;
+  .container {
+    .nameDiv {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
 
-      .deleteIcon {
+    .divIcon {
+      padding: 0;
+      margin: 0;
+
+      p {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        margin: 0.5rem 1.3rem;
+        padding: 0;
         cursor: pointer;
+
+        .icon {
+          margin-right: 0.5rem;
+        }
       }
+    }
+  }
+
+  //! notFound Msg Seciton ////
+  .messageDiv {
+    text-align: center;
+
+    .message {
+      padding: 0;
+      margin: 0;
+      color: darkred;
     }
   }
 }
