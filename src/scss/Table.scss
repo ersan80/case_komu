@@ -1,6 +1,14 @@
+
+.container:nth-child(2){
+  background-color: red;
+
+}
+
+
 .tableContainer {
   margin: auto;
   padding: 1rem;
+  
 
   .nameDiv {
     font-size: 1.7rem;
@@ -8,7 +16,7 @@
     margin-top: 1rem;
   }
 
-  .infoBox {
+  .infoBox:nth-child(2) {
     display: flex;
     justify-content: space-between;
     align-items: center;

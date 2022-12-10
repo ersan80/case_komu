@@ -6,9 +6,10 @@ import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import "../scss/Table.scss";
 
 const Table = ({ task, search, deleteData }) => {
-  const charCode = search.charCodeAt();
+  const charCode = search.charCodeAt(0);
+  console.log(charCode)
   const [notFound, setNotFound] = useState(
-    "The cargo information you were looking for was not found"
+    "The cargo information you were looking for was not found 😔"
   );
   const [filter, setFilter] = useState([]);
   const filtered = () => {
@@ -24,7 +25,7 @@ const Table = ({ task, search, deleteData }) => {
 
   useEffect(() => {
     filtered();
-  }, [search]);
+  }, [search,task]);
 
 
   return (
